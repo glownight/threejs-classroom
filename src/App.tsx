@@ -46,7 +46,7 @@ function Chair({ position }: { position: [number, number, number] }) {
         <meshStandardMaterial color={0x1e5d53} roughness={0.85} />
       </mesh>
       {/* 椅腿 */}
-      {[-0.3, 0.3].flatMap((x) => [-0.25, 0.25].map((z, i) => (
+      {[-0.3, 0.3].flatMap((x) => [-0.25, 0.25].map((z) => (
         <mesh key={`${x}-${z}`} position={[x, 0.25, z]} castShadow>
           <boxGeometry args={[0.06, 0.5, 0.06]} />
           <meshStandardMaterial color={0x184b44} />
