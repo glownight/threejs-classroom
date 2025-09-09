@@ -1,0 +1,9 @@
+/* 让画布全屏显示，移除默认间距 */
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 隐藏示例样式的视觉干扰 */
+.logo, .card, .read-the-docs { display: none !important; }
